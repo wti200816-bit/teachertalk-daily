@@ -1,0 +1,835 @@
+[
+  {
+    "id": 1,
+    "dayLabel": "Ngày 1",
+    "title": "Classroom Warm-up & Positive Reinforcement",
+    "vietnameseTitle": "Khởi động lớp học & Khích lệ học sinh tích cực",
+    "category": "Sư phạm",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Các cụm từ tự nhiên giúp giáo viên mở đầu tiết học ấm áp, thu hút sự chú ý và khen ngợi nỗ lực của học sinh thay vì chỉ nói 'Good job'.",
+    "level1": [
+      {
+        "id": "d1-p1",
+        "english": "Let's settle down and get ready for today's lesson.",
+        "collocation": "settle down",
+        "ipa": "/lɛts ˈsɛt.əl daʊn ænd ɡɛt ˈrɛd.i fɔːr təˈdeɪz ˈlɛs.ən/",
+        "vietnamese": "Cả lớp ổn định chỗ ngồi và chuẩn bị cho bài học hôm nay nhé.",
+        "tip": "Nối âm nhẹ ở 'settle down' (/ˈsɛt.əl daʊn/), hạ giọng ấm áp ở cuối câu."
+      },
+      {
+        "id": "d1-p2",
+        "english": "I really appreciate how much effort you put into this assignment.",
+        "collocation": "put effort into",
+        "ipa": "/aɪ ˈrɪə.li əˈpriː.ʃi.eɪt haʊ mʌtʃ ˈɛf.ərt juː pʊt ˈɪn.tuː ðɪs əˈsaɪn.mənt/",
+        "vietnamese": "Thầy/Cô thực sự trân trọng sự nỗ lực mà em đã dành cho bài tập này.",
+        "tip": "Nhấn trọng âm vào từ 'appreciate' (/əˈpriː.ʃi.eɪt/) và 'effort' (/ˈɛf.ərt/)."
+      },
+      {
+        "id": "d1-p3",
+        "english": "Don't be afraid of making mistakes when you share your ideas.",
+        "collocation": "making mistakes",
+        "ipa": "/doʊnt biː əˈfreɪd ʌv ˈmeɪ.kɪŋ mɪˈsteɪks wɛn juː ʃɛər jʊər aɪˈdɪəz/",
+        "vietnamese": "Đừng ngại mắc lỗi khi các em chia sẻ ý tưởng của mình nhé.",
+        "tip": "Chú ý âm đuôi /s/ trong 'mistakes' và 'ideas' để câu nghe rõ ràng, chuẩn xác."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "How do you usually encourage shy students to participate in your class?",
+      "aiQuestionVi": "Thầy/Cô thường làm thế nào để khích lệ những học sinh rụt rè tham gia phát biểu trong lớp?",
+      "sentenceFrame": "In my class, I usually [slot1] when students [slot2], so that they can [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "hành động của giáo viên",
+          "options": [
+            { "en": "give them gentle encouragement", "vi": "động viên các em nhẹ nhàng" },
+            { "en": "organize small group discussions", "vi": "tổ chức thảo luận nhóm nhỏ" },
+            { "en": "praise their small improvements", "vi": "khen ngợi những tiến bộ nhỏ" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "tình huống của học sinh",
+          "options": [
+            { "en": "feel nervous about speaking up", "vi": "cảm thấy lo lắng khi phát biểu" },
+            { "en": "hesitate to answer questions", "vi": "ngập ngừng khi trả lời câu hỏi" },
+            { "en": "lack confidence in front of the class", "vi": "thiếu tự tin trước cả lớp" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "kết quả mong đợi",
+          "options": [
+            { "en": "build their confidence step by step", "vi": "xây dựng sự tự tin từng bước" },
+            { "en": "feel safe to express themselves", "vi": "cảm thấy an toàn khi bày tỏ ý kiến" },
+            { "en": "take part in the lesson actively", "vi": "tham gia bài học chủ động hơn" }
+          ]
+        }
+      ],
+      "sampleAnswer": "In my class, I usually give them gentle encouragement when students feel nervous about speaking up, so that they can build their confidence step by step.",
+      "sampleAnswerVi": "Trong lớp của tôi, tôi thường động viên nhẹ nhàng khi học sinh cảm thấy lo lắng lúc phát biểu, để các em có thể từng bước xây dựng sự tự tin."
+    },
+    "level3": {
+      "scenario": "Bạn đang trao đổi nhanh tại phòng giáo viên với thầy Mark (giáo viên nước ngoài) về cách khuấy động lớp học buổi chiều khi học sinh hơi uể oải.",
+      "partnerRole": "Mr. Mark (Giáo viên đồng nghiệp)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Good afternoon! My afternoon class looks a bit tired today. How do you usually start your lessons to wake them up?",
+          "aiLineVi": "Chào buổi chiều! Lớp ca chiều của tôi hôm nay trông hơi mệt. Bạn thường bắt đầu tiết học thế nào để giúp các em tỉnh táo hơn?",
+          "keywords": ["short warm-up game", "five minutes", "boost their energy"],
+          "hintVi": "Gợi ý: Mình thường bắt đầu bằng một trò chơi khởi động ngắn khoảng 5 phút để tăng năng lượng cho các em.",
+          "rescueSentence": "I usually start with a short warm-up game for five minutes to boost their energy.",
+          "rescueSentenceVi": "Mình thường bắt đầu bằng một trò chơi khởi động ngắn trong 5 phút để nạp lại năng lượng cho các em."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "That sounds practical! What if some students still don't pay attention during group work?",
+          "aiLineVi": "Nghe thiết thực đấy! Thế nếu một số học sinh vẫn không chú ý trong lúc làm việc nhóm thì sao?",
+          "keywords": ["walk around", "assign clear roles", "everyone contributes"],
+          "hintVi": "Gợi ý: Mình đi quanh lớp và phân công vai trò rõ ràng để ai cũng có phần đóng góp.",
+          "rescueSentence": "I walk around the classroom and assign clear roles so that everyone contributes.",
+          "rescueSentenceVi": "Mình đi vòng quanh lớp và giao vai trò rõ ràng để học sinh nào cũng cùng đóng góp."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "I love that idea. Thanks for sharing your experience with me!",
+          "aiLineVi": "Ý kiến hay quá. Cảm ơn bạn đã chia sẻ kinh nghiệm với mình nhé!",
+          "keywords": ["my pleasure", "keep in touch", "exchange more tips"],
+          "hintVi": "Gợi ý: Rất sẵn lòng! Hãy giữ liên lạc để trao đổi thêm nhiều mẹo dạy học nhé.",
+          "rescueSentence": "It's my pleasure! Let's keep in touch and exchange more teaching tips soon.",
+          "rescueSentenceVi": "Rất sẵn lòng! Chúng mình hãy thường xuyên trao đổi thêm các mẹo giảng dạy nhé."
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Chia sẻ bí quyết tạo không khí lớp học tích cực",
+      "question": "What makes a positive and welcoming classroom environment for students? Share your personal teaching experience.",
+      "questionVi": "Điều gì tạo nên một môi trường lớp học tích cực và thân thiện cho học sinh? Hãy chia sẻ kinh nghiệm thực tế của thầy/cô.",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Nêu quan điểm cá nhân (From my experience as a teacher...)",
+        "Ý chính 1: Cách giao tiếp tôn trọng và khích lệ học sinh (show mutual respect / praise their effort)",
+        "Ý chính 2: Tạo không gian để học sinh không sợ sai (create a safe space to make mistakes)"
+      ],
+      "modelResponse": "From my perspective as a teacher for over ten years, a positive classroom starts with mutual respect and warmth. Instead of focusing only on test scores, I always try to notice and praise my students' daily effort. When students feel respected and know that making mistakes is a natural part of learning, they become much more engaged and enthusiastic in class.",
+      "modelResponseVi": "Từ góc nhìn của một giáo viên đã đứng lớp hơn mười năm, một lớp học tích cực bắt đầu từ sự tôn trọng lẫn nhau và sự ấm áp. Thay vì chỉ tập trung vào điểm số, tôi luôn cố gắng ghi nhận và khen ngợi nỗ lực hàng ngày của học sinh. Khi các em cảm thấy được tôn trọng và hiểu rằng mắc lỗi là một phần tự nhiên của việc học, các em sẽ gắn kết và hào hứng hơn rất nhiều."
+    }
+  },
+  {
+    "id": 2,
+    "dayLabel": "Ngày 2",
+    "title": "Discussing Student Progress with Parents",
+    "vietnameseTitle": "Trao đổi tình hình học tập với phụ huynh",
+    "category": "Phụ huynh",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Rèn luyện cách nhận xét tinh tế, lịch sự và chuyên nghiệp khi trò chuyện với phụ huynh về điểm mạnh cũng như điểm cần cải thiện của học sinh.",
+    "level1": [
+      {
+        "id": "d2-p1",
+        "english": "Your child has made steady progress in communication skills this semester.",
+        "collocation": "made steady progress",
+        "ipa": "/jʊər tʃaɪld hæz meɪd ˈstɛd.i ˈprɑː.ɡrɛs ɪn kəˌmjuː.nɪˈkeɪ.ʃən skɪlz ðɪs səˈmɛs.tər/",
+        "vietnamese": "Con đã có sự tiến bộ vững vàng về kỹ năng giao tiếp trong học kỳ này.",
+        "tip": "Nhấn rõ cụm 'steady progress' (/ˈstɛd.i ˈprɑː.ɡrɛs/) để tạo sự yên tâm cho phụ huynh."
+      },
+      {
+        "id": "d2-p2",
+        "english": "He is very creative, though he needs to pay closer attention to deadlines.",
+        "collocation": "pay closer attention",
+        "ipa": "/hiː ɪz ˈvɛr.i kriˈeɪ.tɪv ðoʊ hiː niːdz tuː peɪ ˈkloʊ.sər əˈtɛn.ʃən tuː ˈdɛd.laɪnz/",
+        "vietnamese": "Em rất sáng tạo, tuy nhiên em cần chú ý sát sao hơn đến thời hạn nộp bài.",
+        "tip": "Kỹ thuật 'khen trước - góp ý sau' với từ nối 'though' (/ðoʊ/) giúp câu nói rất lịch sự."
+      },
+      {
+        "id": "d2-p3",
+        "english": "We can work closely together to support her learning habits at home.",
+        "collocation": "work closely together",
+        "ipa": "/wiː kæn wɜːrk ˈkloʊs.li təˈɡɛð.ər tuː səˈpɔːrt hɜːr ˈlɜːr.nɪŋ ˈhæb.ɪts æt hoʊm/",
+        "vietnamese": "Nhà trường và gia đình có thể phối hợp chặt chẽ để hỗ trợ thói quen học tập của con ở nhà.",
+        "tip": "Phát âm rõ âm /s/ trong 'closely' (/ˈkloʊs.li/), tránh đọc nhầm thành /z/."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "How do you politely tell a parent that their child needs to improve their homework habits?",
+      "aiQuestionVi": "Thầy/Cô nói thế nào một cách lịch sự với phụ huynh khi học sinh cần cải thiện thói quen làm bài tập về nhà?",
+      "sentenceFrame": "Overall, your child [slot1], and I believe they will do even better if we [slot2] to help them [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "điểm mạnh mở đầu",
+          "options": [
+            { "en": "has a very positive attitude in class", "vi": "có thái độ rất tích cực trên lớp" },
+            { "en": "understands new lessons quickly", "vi": "tiếp thu bài mới khá nhanh" },
+            { "en": "gets along well with classmates", "vi": "hòa đồng tốt với bạn bè trong lớp" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "sự phối hợp gia đình - nhà trường",
+          "options": [
+            { "en": "set a regular study routine at home", "vi": "thiết lập khung giờ tự học cố định ở nhà" },
+            { "en": "check their daily homework checklist", "vi": "kiểm tra danh mục bài tập mỗi ngày" },
+            { "en": "encourage them to review lessons for 15 minutes", "vi": "khích lệ con ôn bài 15 phút mỗi tối" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "mục tiêu cải thiện",
+          "options": [
+            { "en": "complete assignments on time", "vi": "hoàn thành bài tập đúng hạn" },
+            { "en": "develop stronger self-study habits", "vi": "rèn luyện thói quen tự học tốt hơn" },
+            { "en": "retain knowledge more effectively", "vi": "ghi nhớ kiến thức hiệu quả hơn" }
+          ]
+        }
+      ],
+      "sampleAnswer": "Overall, your child has a very positive attitude in class, and I believe they will do even better if we set a regular study routine at home to help them complete assignments on time.",
+      "sampleAnswerVi": "Nhìn chung, con có thái độ rất tích cực trên lớp, và tôi tin rằng con sẽ còn tiến bộ hơn nữa nếu chúng ta thiết lập giờ học cố định ở nhà để giúp con hoàn thành bài tập đúng hạn."
+    },
+    "level3": {
+      "scenario": "Một phụ huynh nước ngoài (Mrs. Sarah) hỏi thăm bạn sau giờ học về tình hình hòa nhập của bé Liam mới chuyển trường.",
+      "partnerRole": "Mrs. Sarah (Phụ huynh bé Liam)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Hello Teacher! Thank you for taking the time to meet me. How is Liam adjusting to his new class?",
+          "aiLineVi": "Chào cô/thầy! Cảm ơn thầy/cô đã dành thời gian gặp tôi. Bé Liam thích nghi với lớp mới thế nào rồi ạ?",
+          "keywords": ["adapting well", "made new friends", "active in group activities"],
+          "hintVi": "Gợi ý: Liam đang thích nghi rất tốt, đã kết bạn mới và tham gia tích cực vào hoạt động nhóm.",
+          "rescueSentence": "Liam is adapting very well. He has already made new friends and is active in group activities.",
+          "rescueSentenceVi": "Liam đang thích nghi rất tốt ạ. Con đã có thêm bạn mới và rất năng nổ trong các hoạt động nhóm."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "I'm so relieved to hear that! Is there any area where he needs extra support at home?",
+          "aiLineVi": "Nghe vậy tôi nhẹ cả người! Có mảng nào ở nhà gia đình cần hỗ trợ thêm cho con không ạ?",
+          "keywords": ["reading comprehension", "15 minutes a day", "build his vocabulary"],
+          "hintVi": "Gợi ý: Con cần luyện đọc hiểu thêm khoảng 15 phút mỗi ngày để mở rộng vốn từ vựng.",
+          "rescueSentence": "He could use a little extra practice with reading comprehension for 15 minutes a day to build his vocabulary.",
+          "rescueSentenceVi": "Con có thể luyện tập thêm phần đọc hiểu khoảng 15 phút mỗi ngày để mở rộng vốn từ vựng ạ."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "We will definitely do that every evening. Thank you for caring so much about him!",
+          "aiLineVi": "Vợ chồng tôi chắc chắn sẽ thực hiện mỗi tối. Cảm ơn thầy/cô đã quan tâm sát sao đến con!",
+          "keywords": ["keep you updated", "feel free to message", "have any questions"],
+          "hintVi": "Gợi ý: Tôi sẽ cập nhật thường xuyên cho gia đình. Chị cứ nhắn tin cho tôi bất cứ khi nào có thắc mắc nhé.",
+          "rescueSentence": "I will keep you updated on his progress. Please feel free to message me anytime you have questions.",
+          "rescueSentenceVi": "Tôi sẽ thường xuyên cập nhật sự tiến bộ của con. Chị cứ thoải mái nhắn tin cho tôi bất cứ khi nào cần nhé."
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Nghệ thuật phản hồi tích cực cho phụ huynh",
+      "question": "Why is constructive communication between teachers and parents important for a student's success?",
+      "questionVi": "Tại sao việc giao tiếp mang tính xây dựng giữa giáo viên và phụ huynh lại quan trọng đối với sự tiến bộ của học sinh?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Giáo viên và phụ huynh cùng chung mục tiêu (share the same goal)",
+        "Ý chính 1: Bắt đầu bằng lời khen chân thành để tạo sự tin tưởng (build trust by highlighting strengths)",
+        "Ý chính 2: Đưa ra giải pháp cụ thể thay vì chỉ phàn nàn (offer practical solutions together)"
+      ],
+      "modelResponse": "In my opinion, teachers and parents are partners who share the same goal: helping children grow. When talking to parents, I always start by highlighting their child's strengths before discussing areas for improvement. Instead of just pointing out problems, offering practical solutions helps parents feel supported and creates a strong bridge between school and home.",
+      "modelResponseVi": "Theo quan điểm của tôi, giáo viên và phụ huynh là những người đồng hành có chung một mục tiêu: giúp trẻ trưởng thành. Khi trao đổi với phụ huynh, tôi luôn bắt đầu bằng việc nêu bật điểm mạnh của con trước khi bàn về những điểm cần khắc phục. Thay vì chỉ nêu ra vấn đề, việc gợi ý các giải pháp thiết thực giúp phụ huynh cảm thấy được đồng hành và tạo nên cầu nối vững chắc giữa nhà trường và gia đình."
+    }
+  },
+  {
+    "id": 3,
+    "dayLabel": "Ngày 3",
+    "title": "Collaborating with Foreign Colleagues",
+    "vietnameseTitle": "Phối hợp giảng dạy cùng đồng nghiệp nước ngoài",
+    "category": "Đồng nghiệp",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Tự tin trao đổi kế hoạch bài giảng (lesson plan), phân chia thời lượng tiết đồng giảng (co-teaching) và thống nhất phương pháp đánh giá.",
+    "level1": [
+      {
+        "id": "d3-p1",
+        "english": "Could we go over the lesson plan for tomorrow's co-teaching session?",
+        "collocation": "go over the lesson plan",
+        "ipa": "/kʊd wiː ɡoʊ ˈoʊ.vər ðə ˈlɛs.ən plæn fɔːr təˈmɑːr.oʊz ˈkoʊˌtiː.tʃɪŋ ˈsɛʃ.ən/",
+        "vietnamese": "Chúng mình có thể rà soát lại giáo án cho tiết dạy phối hợp ngày mai được không?",
+        "tip": "Cụm động từ 'go over' (/ɡoʊ ˈoʊ.vər/) tự nhiên và thân thiện hơn 'check' trong môi trường công sở."
+      },
+      {
+        "id": "d3-p2",
+        "english": "I'll take charge of the grammar explanation, and you can lead the speaking activity.",
+        "collocation": "take charge of",
+        "ipa": "/aɪl teɪk tʃɑːrdʒ ʌv ðə ˈɡræm.ər ˌɛk.spləˈneɪ.ʃən ænd juː kæn liːd ðə ˈspiː.kɪŋ ækˈtɪv.ə.ti/",
+        "vietnamese": "Mình sẽ phụ trách phần giải thích ngữ pháp, còn bạn dẫn dắt hoạt động luyện nói nhé.",
+        "tip": "Chú ý âm /tʃ/ và /dʒ/ trong từ 'charge' (/tʃɑːrdʒ/)."
+      },
+      {
+        "id": "d3-p3",
+        "english": "We are on the same page about how to assess the students' projects.",
+        "collocation": "on the same page",
+        "ipa": "/wiː ɑːr ɑːn ðə seɪm peɪdʒ əˈbaʊt haʊ tuː əˈsɛs ðə ˈstuː.dənts ˈprɑː.dʒɛkts/",
+        "vietnamese": "Chúng ta hoàn toàn đồng thuận về cách đánh giá dự án của học sinh.",
+        "tip": "Thành ngữ 'on the same page' cực kỳ phổ biến khi họp chuyên môn với giáo viên quốc tế."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "How would you suggest dividing tasks when co-teaching a class with a foreign teacher?",
+      "aiQuestionVi": "Thầy/Cô sẽ đề xuất phân chia công việc thế nào khi dạy phối hợp (co-teaching) với một giáo viên nước ngoài?",
+      "sentenceFrame": "To make our lesson run smoothly, I can [slot1] while you [slot2], and then we can [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "phần việc của bạn",
+          "options": [
+            { "en": "clarify difficult instructions in Vietnamese", "vi": "giải thích rõ các hướng dẫn khó" },
+            { "en": "prepare the visual slides and handouts", "vi": "chuẩn bị slide trực quan và phiếu bài tập" },
+            { "en": "manage classroom discipline and grouping", "vi": "ổn định trật tự lớp và chia nhóm" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "phần việc của đồng nghiệp",
+          "options": [
+            { "en": "model natural pronunciation for the students", "vi": "làm mẫu phát âm tự nhiên cho học sinh" },
+            { "en": "facilitate the interactive role-play game", "vi": "điều phối trò chơi đóng vai tương tác" },
+            { "en": "lead the Q&A discussion with the whole class", "vi": "dẫn dắt phần hỏi đáp với cả lớp" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "hoạt động tổng kết chung",
+          "options": [
+            { "en": "give feedback to each group together", "vi": "cùng nhau nhận xét cho từng nhóm" },
+            { "en": "review key takeaways in the last five minutes", "vi": "tổng kết kiến thức trọng tâm ở 5 phút cuối" },
+            { "en": "evaluate their speaking performance fairly", "vi": "đánh giá phần thể hiện của các em công bằng" }
+          ]
+        }
+      ],
+      "sampleAnswer": "To make our lesson run smoothly, I can manage classroom discipline and grouping while you facilitate the interactive role-play game, and then we can give feedback to each group together.",
+      "sampleAnswerVi": "Để tiết học diễn ra suôn sẻ, mình có thể quản lý trật tự lớp và chia nhóm trong khi bạn điều phối trò chơi đóng vai, sau đó chúng ta cùng nhận xét cho từng nhóm."
+    },
+    "level3": {
+      "scenario": "Bạn đang bàn bạc với cô Emma (giáo viên bản xứ) trước tiết học dự án 'Ngày hội Văn hóa' vào tuần tới.",
+      "partnerRole": "Ms. Emma (Giáo viên đồng giảng)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Hi! Do you have a few minutes to discuss our Cultural Day workshop for next Friday?",
+          "aiLineVi": "Chào bạn! Bạn có vài phút để bàn về buổi workshop Ngày hội Văn hóa thứ Sáu tuần sau không?",
+          "keywords": ["sure", "looking forward to", "printed the schedule"],
+          "hintVi": "Gợi ý: Tất nhiên rồi! Mình cũng đang mong chờ buổi đó, mình vừa in lịch trình ra đây.",
+          "rescueSentence": "Sure, I do! I'm really looking forward to it, and I just printed the schedule right here.",
+          "rescueSentenceVi": "Tất nhiên rồi! Mình rất hào hứng với sự kiện này, và mình cũng vừa in lịch trình ra đây."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "Great! Should we divide the students into four teams or let them choose their own partners?",
+          "aiLineVi": "Tuyệt quá! Chúng mình nên chia học sinh thành 4 đội hay để các em tự chọn bạn bắt cặp?",
+          "keywords": ["mix different levels", "support each other", "four balanced teams"],
+          "hintVi": "Gợi ý: Mình nghĩ nên chia 4 đội cân bằng có đủ các trình độ để các em hỗ trợ lẫn nhau.",
+          "rescueSentence": "I think we should create four balanced teams and mix different levels so they can support each other.",
+          "rescueSentenceVi": "Mình nghĩ chúng ta nên lập 4 đội cân bằng và trộn các trình độ khác nhau để các em hỗ trợ lẫn nhau."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "That makes total sense. I'll prepare the flashcards this afternoon and send them to you.",
+          "aiLineVi": "Hợp lý lắm. Chiều nay mình sẽ chuẩn bị bộ thẻ từ vựng rồi gửi cho bạn xem nhé.",
+          "keywords": ["appreciate your help", "review them tonight", "see you tomorrow"],
+          "hintVi": "Gợi ý: Cảm ơn sự hỗ trợ của bạn, tối nay mình sẽ xem qua. Hẹn gặp bạn ngày mai nhé!",
+          "rescueSentence": "I really appreciate your help! I'll review them tonight. See you tomorrow morning!",
+          "rescueSentenceVi": "Cảm ơn bạn nhiều nhé! Tối nay mình sẽ xem qua. Hẹn gặp lại bạn vào sáng mai!"
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Lợi ích của việc hợp tác cùng đồng nghiệp quốc tế",
+      "question": "What have you learned from working with colleagues who have different teaching styles?",
+      "questionVi": "Thầy/Cô đã học hỏi được điều gì khi làm việc cùng những đồng nghiệp có phong cách giảng dạy khác nhau?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Mỗi giáo viên đều có thế mạnh riêng (Every teacher brings unique strengths)",
+        "Ý chính 1: Học được cách tổ chức hoạt động cởi mở, sáng tạo (learn creative and open-ended activities)",
+        "Ý chính 2: Kết hợp sự kỷ luật của giáo viên Việt Nam và sự tự nhiên của giáo viên quốc tế (combine structure with spontaneity)"
+      ],
+      "modelResponse": "Working with colleagues from different backgrounds has broadened my perspective as an educator. Vietnamese teachers are often great at structured lesson planning and classroom management, while foreign colleagues bring wonderful spontaneity and communicative games. By combining both styles, we create a balanced learning environment where students achieve solid results while truly enjoying the class.",
+      "modelResponseVi": "Làm việc với các đồng nghiệp đến từ nhiều nền văn hóa khác nhau đã giúp tôi mở rộng góc nhìn sư phạm. Giáo viên Việt Nam thường rất giỏi trong việc thiết kế bài giảng chặt chẽ và quản lý lớp học, trong khi đồng nghiệp nước ngoài mang đến sự tự nhiên và các trò chơi giao tiếp sinh động. Khi kết hợp cả hai phong cách, chúng tôi tạo ra môi trường học tập cân bằng, nơi học sinh vừa nắm vững kiến thức vừa thực sự yêu thích tiết học."
+    }
+  },
+  {
+    "id": 4,
+    "dayLabel": "Ngày 4",
+    "title": "Handling Classroom Distractions Politely",
+    "vietnameseTitle": "Xử lý mất tập trung trong lớp một cách tinh tế",
+    "category": "Lớp học",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Cách nhắc nhở học sinh nói chuyện riêng, sử dụng điện thoại hoặc mất tập trung bằng tiếng Anh chuẩn mực, giữ uy tín của giáo viên mà không tạo áp lực căng thẳng.",
+    "level1": [
+      {
+        "id": "d4-p1",
+        "english": "Let's put away our phones and stay focused on the main task.",
+        "collocation": "stay focused on",
+        "ipa": "/lɛts pʊt əˈweɪ ˈaʊ.ər foʊnz ænd steɪ ˈfoʊ.kəst ɑːn ðə meɪn tæsk/",
+        "vietnamese": "Chúng ta cất điện thoại đi và tập trung vào nhiệm vụ chính nào.",
+        "tip": "Dùng 'Let's + động từ' nghe mang tính đồng hành hơn là mệnh lệnh cứng nhắc."
+      },
+      {
+        "id": "d4-p2",
+        "english": "Please keep your voices down so you don't disturb other groups.",
+        "collocation": "keep your voices down",
+        "ipa": "/pliːz kiːp jʊər ˈvɔɪ.sɪz daʊn soʊ juː doʊnt dɪˈstɜːrb ˈʌð.ər ɡruːps/",
+        "vietnamese": "Các em vui lòng nói nhỏ vừa đủ nghe để không làm ảnh hưởng tới các nhóm khác nhé.",
+        "tip": "Phát âm rõ 2 âm tiết của 'voices' (/ˈvɔɪ.sɪz/) và hạ giọng ở từ 'down'."
+      },
+      {
+        "id": "d4-p3",
+        "english": "I'd love to hear your thoughts once your classmate finishes speaking.",
+        "collocation": "finishes speaking",
+        "ipa": "/aɪd lʌv tuː hɪər jʊər θɔːts wʌns jʊər ˈklæs.meɪt ˈfɪn.ɪ.ʃɪz ˈspiː.kɪŋ/",
+        "vietnamese": "Thầy/Cô rất muốn nghe ý kiến của em ngay sau khi bạn cùng lớp trình bày xong.",
+        "tip": "Cách nhắc học sinh không ngắt lời bạn cực kỳ lịch sự và tôn trọng."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "What do you do when two students keep chatting privately during your explanation?",
+      "aiQuestionVi": "Thầy/Cô làm gì khi có hai học sinh cứ nói chuyện riêng trong lúc thầy/cô đang giảng bài?",
+      "sentenceFrame": "Instead of getting angry, I usually [slot1] and politely ask them to [slot2] so that [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "cách xử lý tinh tế",
+          "options": [
+            { "en": "make eye contact and pause briefly", "vi": "nhìn về phía các em và ngừng giảng một nhịp" },
+            { "en": "walk closer to their desks calmly", "vi": "điềm tĩnh bước lại gần bàn của các em" },
+            { "en": "invite them to answer a simple question", "vi": "mời các em trả lời một câu hỏi đơn giản" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "lời nhắc nhở lịch sự",
+          "options": [
+            { "en": "save their private chat for break time", "vi": "để dành câu chuyện riêng vào giờ ra chơi" },
+            { "en": "share their ideas with the whole class", "vi": "chia sẻ ý kiến với cả lớp" },
+            { "en": "turn their attention back to the board", "vi": "hướng sự chú ý trở lại bảng" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "tác dụng đối với lớp học",
+          "options": [
+            { "en": "the lesson continues without embarrassment", "vi": "tiết học tiếp diễn mà không ai bị khó xử" },
+            { "en": "everyone can follow the key points clearly", "vi": "mọi người đều theo kịp nội dung chính" },
+            { "en": "we maintain a respectful classroom atmosphere", "vi": "chúng ta giữ được bầu không khí tôn trọng" }
+          ]
+        }
+      ],
+      "sampleAnswer": "Instead of getting angry, I usually make eye contact and pause briefly and politely ask them to save their private chat for break time so that the lesson continues without embarrassment.",
+      "sampleAnswerVi": "Thay vì nổi nóng, tôi thường nhìn về phía các em, ngừng lại một nhịp và lịch sự nhắc các em để dành câu chuyện riêng vào giờ giải lao để tiết học tiếp tục mà không ai cảm thấy khó xử."
+    },
+    "level3": {
+      "scenario": "Trong giờ thảo luận nhóm bằng tiếng Anh, một học sinh (Minh) đang mải nhìn điện thoại. Bạn bước tới nhắc nhở và hướng dẫn em quay lại bài học.",
+      "partnerRole": "Student Minh (Học sinh lớp 10)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Oh, sorry Teacher! I was just checking a message on my phone.",
+          "aiLineVi": "Ồ, em xin lỗi thầy/cô ạ! Em chỉ vừa xem tin nhắn trên điện thoại một chút thôi.",
+          "keywords": ["put it in your bag", "group needs your ideas", "five minutes left"],
+          "hintVi": "Gợi ý: Em hãy cất điện thoại vào cặp nhé, nhóm đang cần ý kiến của em và chỉ còn 5 phút thôi.",
+          "rescueSentence": "Please put it in your bag for now. Your group needs your ideas, and we only have five minutes left.",
+          "rescueSentenceVi": "Em cất tạm vào cặp nhé. Nhóm đang cần ý tưởng của em và chúng ta chỉ còn 5 phút nữa thôi."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "Okay, I've put it away. Actually, we are not sure how to start the second question.",
+          "aiLineVi": "Vâng, em cất đi rồi ạ. Thực ra nhóm em đang chưa biết bắt đầu câu hỏi số 2 như thế nào.",
+          "keywords": ["look at the example", "underline key words", "brainstorm two reasons"],
+          "hintVi": "Gợi ý: Các em hãy nhìn vào ví dụ trong sách, gạch chân từ khóa và thảo luận 2 lý do chính nhé.",
+          "rescueSentence": "First, look at the example in your book, underline the key words, and brainstorm two main reasons together.",
+          "rescueSentenceVi": "Trước tiên, các em hãy nhìn ví dụ trong sách, gạch chân các từ khóa và cùng nhau tìm ra hai lý do chính nhé."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "Got it! That makes it much clearer. We'll write down our points now.",
+          "aiLineVi": "Em hiểu rồi ạ! Thế này rõ hơn nhiều. Bọn em sẽ viết các ý ra ngay đây ạ.",
+          "keywords": ["keep up the good work", "call me over", "need more help"],
+          "hintVi": "Gợi ý: Phát huy tốt nhé! Cứ gọi thầy/cô nếu các em cần hỗ trợ thêm.",
+          "rescueSentence": "Keep up the good work! Just call me over if your team needs any more help.",
+          "rescueSentenceVi": "Tiếp tục phát huy tốt nhé! Cứ gọi thầy/cô nếu nhóm cần hỗ trợ thêm."
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Giữ kỷ luật lớp học bằng sự điềm tĩnh",
+      "question": "How has your approach to classroom management changed since you first started teaching?",
+      "questionVi": "Cách quản lý lớp học của thầy/cô đã thay đổi như thế nào so với thời mới vào nghề?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Khi mới đi dạy thường dễ căng thẳng (When I first started teaching, I used to...)",
+        "Ý chính 1: Ở độ tuổi 30-40, biết lắng nghe nguyên nhân đằng sau hành vi của học sinh (understand the reason behind their behavior)",
+        "Ý chính 2: Dùng sự bình tĩnh và hài hước để dẫn dắt lớp học (use calmness and gentle humor)"
+      ],
+      "modelResponse": "When I first started teaching in my twenties, I used to raise my voice whenever the class got noisy. Now, in my thirties, my approach is much calmer. I realized that keeping my temper under control sets a strong example for students. A gentle reminder, a touch of humor, and clear expectations work far better than strict punishment.",
+      "modelResponseVi": "Khi mới bắt đầu đi dạy ở tuổi đôi mươi, tôi từng phải nâng cao giọng mỗi khi lớp ồn ào. Giờ đây, khi đã ở độ tuổi ba mươi, bốn mươi, cách tiếp cận của tôi điềm tĩnh hơn nhiều. Tôi nhận ra rằng việc giữ bình tĩnh chính là tấm gương tốt nhất cho học sinh. Một lời nhắc nhở nhẹ nhàng, một chút hài hước và những nguyên tắc rõ ràng mang lại hiệu quả cao hơn nhiều so với sự trách phạt khắt khe."
+    }
+  },
+  {
+    "id": 5,
+    "dayLabel": "Ngày 5",
+    "title": "Work-Life Balance for Busy Teachers",
+    "vietnameseTitle": "Cân bằng công việc và gia đình ở tuổi 30–40",
+    "category": "Đời sống",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Chủ đề đời sống gần gũi với giáo viên 30-40 tuổi: quản lý thời gian chấm bài, chăm sóc con cái và dành khoảng lặng tái tạo năng lượng mỗi ngày.",
+    "level1": [
+      {
+        "id": "d5-p1",
+        "english": "Between lesson planning and family duties, my schedule is always packed.",
+        "collocation": "schedule is always packed",
+        "ipa": "/bɪˈtwiːn ˈlɛs.ən ˈplæn.ɪŋ ænd ˈfæm.ə.li ˈduː.tiz maɪ ˈskɛdʒ.uːl ɪz ˈɔːl.weɪz pækt/",
+        "vietnamese": "Giữa việc soạn giáo án và chăm lo cho gia đình, lịch trình của tôi lúc nào cũng kín mít.",
+        "tip": "Từ 'schedule' trong tiếng Anh-Mỹ đọc là /ˈskɛdʒ.uːl/, còn 'packed' có âm cuối /kt/."
+      },
+      {
+        "id": "d5-p2",
+        "english": "I try to finish grading papers at school so I can spend quality time with my kids.",
+        "collocation": "spend quality time",
+        "ipa": "/aɪ traɪ tuː ˈfɪn.ɪʃ ˈɡreɪ.dɪŋ ˈpeɪ.pərz æt skuːl soʊ aɪ kæn spɛnd ˈkwɑː.lə.ti taɪm wɪð maɪ kɪdz/",
+        "vietnamese": "Tôi cố gắng chấm bài xong ở trường để có thể dành thời gian trọn vẹn bên các con.",
+        "tip": "Cụm 'spend quality time with someone' rất hay khi nói về gia đình."
+      },
+      {
+        "id": "d5-p3",
+        "english": "Taking a quiet walk in the evening helps me recharge my batteries.",
+        "collocation": "recharge my batteries",
+        "ipa": "/ˈteɪ.kɪŋ ə ˈkwaɪ.ət wɔːk ɪn ði ˈiːv.nɪŋ hɛlps miː riːˈtʃɑːrdʒ maɪ ˈbæt.ər.iz/",
+        "vietnamese": "Đi bộ thư thả vào buổi tối giúp tôi nạp lại năng lượng sau ngày làm việc.",
+        "tip": "Thành ngữ 'recharge my batteries' giúp câu nói đạt chuẩn B1 tự nhiên."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "How do you unwind and relax after a busy day of teaching at school?",
+      "aiQuestionVi": "Thầy/Cô thường thư giãn và xả hơi thế nào sau một ngày đứng lớp bận rộn?",
+      "sentenceFrame": "After a long day at school, I love to [slot1] and [slot2], which helps me [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "hoạt động thư giãn đầu tiên",
+          "options": [
+            { "en": "cook a warm dinner with my family", "vi": "nấu một bữa tối ấm cúng cùng gia đình" },
+            { "en": "enjoy a cup of herbal tea on the balcony", "vi": "thưởng thức một tách trà thảo mộc ngoài ban công" },
+            { "en": "do twenty minutes of gentle yoga", "vi": "tập 20 phút yoga nhẹ nhàng" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "hoạt động kết nối / giải trí",
+          "options": [
+            { "en": "listen to my children's stories about their day", "vi": "lắng nghe các con kể chuyện ở trường" },
+            { "en": "read a few pages of an inspiring book", "vi": "đọc vài trang sách truyền cảm hứng" },
+            { "en": "practice English for fifteen minutes", "vi": "luyện nói tiếng Anh trong 15 phút" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "lợi ích tinh thần",
+          "options": [
+            { "en": "let go of work stress completely", "vi": "giải tỏa hoàn toàn căng thẳng công việc" },
+            { "en": "maintain a healthy work-life balance", "vi": "giữ cân bằng lành mạnh giữa công việc và cuộc sống" },
+            { "en": "wake up refreshed the next morning", "vi": "thức dậy đầy tỉnh táo vào sáng hôm sau" }
+          ]
+        }
+      ],
+      "sampleAnswer": "After a long day at school, I love to cook a warm dinner with my family and listen to my children's stories about their day, which helps me maintain a healthy work-life balance.",
+      "sampleAnswerVi": "Sau một ngày dài ở trường, tôi thích nấu một bữa tối ấm cúng cùng gia đình và lắng nghe các con kể chuyện trong ngày, điều đó giúp tôi giữ được sự cân bằng lành mạnh giữa công việc và cuộc sống."
+    },
+    "level3": {
+      "scenario": "Trò chuyện bên tách cà phê sáng thứ Hai với đồng nghiệp (Cô Linda) về việc cân bằng lịch dạy và chăm sóc gia đình.",
+      "partnerRole": "Ms. Linda (Đồng nghiệp tại trường)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Good morning! Did you have a restful weekend, or were you busy grading test papers?",
+          "aiLineVi": "Chào buổi sáng! Cuối tuần vừa rồi bạn có được nghỉ ngơi không, hay lại bận chấm bài kiểm tra?",
+          "keywords": ["finished grading on Friday", "spent the weekend", "family picnic"],
+          "hintVi": "Gợi ý: Mình đã cố chấm xong từ thứ Sáu nên cuối tuần vừa rồi được đi dã ngoại cùng gia đình.",
+          "rescueSentence": "Luckily, I finished grading on Friday afternoon, so I spent the weekend enjoying a family picnic.",
+          "rescueSentenceVi": "May quá, mình đã chấm xong từ chiều thứ Sáu nên cuối tuần được đi dã ngoại cùng cả nhà."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "Good for you! I still struggle to stop bringing schoolwork home. What's your secret?",
+          "aiLineVi": "Tuyệt thế! Mình vẫn hay bị mang việc ở trường về nhà. Bí quyết của bạn là gì vậy?",
+          "keywords": ["set clear boundaries", "prioritize top three tasks", "avoid burnout"],
+          "hintVi": "Gợi ý: Mình đặt ranh giới rõ ràng và ưu tiên 3 việc quan trọng nhất mỗi ngày để tránh kiệt sức.",
+          "rescueSentence": "I try to set clear boundaries and prioritize my top three tasks each day to avoid burnout.",
+          "rescueSentenceVi": "Mình cố gắng đặt ranh giới thời gian rõ ràng và ưu tiên 3 đầu việc quan trọng nhất mỗi ngày để tránh bị quá tải."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "I really need to try that habit this week. And how is your daily English practice going?",
+          "aiLineVi": "Tuần này mình phải thử áp dụng thói quen đó mới được. À, việc luyện tiếng Anh hàng ngày của bạn thế nào rồi?",
+          "keywords": ["fifteen minutes a day", "small consistent steps", "much more confident"],
+          "hintVi": "Gợi ý: Mình duy trì 15 phút mỗi ngày. Những bước nhỏ đều đặn giúp mình tự tin hơn hẳn.",
+          "rescueSentence": "I stick to fifteen minutes a day. Taking small, consistent steps makes me feel much more confident.",
+          "rescueSentenceVi": "Mình duy trì đều đặn 15 phút mỗi ngày. Những bước nhỏ kiên trì giúp mình cảm thấy tự tin hơn rất nhiều."
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Cách giáo viên giữ lửa nghề và chăm sóc bản thân",
+      "question": "How can teachers in their 30s and 40s prevent burnout and keep their passion for teaching alive?",
+      "questionVi": "Làm thế nào để giáo viên ở độ tuổi 30–40 tránh tình trạng quá tải (burnout) và giữ được ngọn lửa yêu nghề?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Thừa nhận áp lực kép giữa công việc trường lớp và gia đình (juggle school duties and family life)",
+        "Ý chính 1: Biết sắp xếp thứ tự ưu tiên và không ôm đồm (prioritize tasks and set realistic goals)",
+        "Ý chính 2: Dành ít nhất 15–30 phút mỗi ngày cho bản thân học hỏi hoặc thư giãn (dedicate time to personal growth)"
+      ],
+      "modelResponse": "In our thirties and forties, many teachers have to juggle heavy workloads at school and family responsibilities at home. To prevent burnout, I have learned not to be a perfectionist about every tiny detail. Setting realistic boundaries, sharing experiences with supportive colleagues, and dedicating fifteen minutes a day to personal growth—like practicing English—keep my mind fresh and my passion for teaching alive.",
+      "modelResponseVi": "Ở độ tuổi 30 và 40, nhiều giáo viên phải xoay xở giữa khối lượng công việc lớn ở trường và trách nhiệm gia đình. Để tránh kiệt sức, tôi học cách không quá cầu toàn ở mọi chi tiết nhỏ. Việc đặt ra ranh giới hợp lý, sẻ chia cùng đồng nghiệp và dành 15 phút mỗi ngày để phát triển bản thân — như luyện nói tiếng Anh — giúp tâm trí tôi luôn tươi mới và giữ trọn ngọn lửa yêu nghề."
+    }
+  },
+  {
+    "id": 6,
+    "dayLabel": "Ngày 6",
+    "title": "Sharing EdTech & AI Teaching Tips",
+    "vietnameseTitle": "Chia sẻ kinh nghiệm ứng dụng công nghệ & AI",
+    "category": "Chuyên môn",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Các cụm từ hiện đại để thảo luận trong buổi sinh hoạt chuyên môn hoặc hội thảo về việc dùng công nghệ, AI để tiết kiệm thời gian soạn bài.",
+    "level1": [
+      {
+        "id": "d6-p1",
+        "english": "Using digital tools helps me save a lot of time on lesson preparation.",
+        "collocation": "save a lot of time",
+        "ipa": "/ˈjuː.zɪŋ ˈdɪdʒ.ɪ.təl tuːlz hɛlps miː seɪv ə lɑːt ʌv taɪm ɑːn ˈlɛs.ən ˌprɛp.əˈreɪ.ʃən/",
+        "vietnamese": "Việc sử dụng các công cụ số giúp tôi tiết kiệm rất nhiều thời gian soạn bài.",
+        "tip": "Nối âm 'save a lot of' (/seɪv ə lɑːt ʌv/) mượt mà để câu có nhịp điệu tự nhiên."
+      },
+      {
+        "id": "d6-p2",
+        "english": "Interactive quizzes keep students actively engaged throughout the lesson.",
+        "collocation": "actively engaged",
+        "ipa": "/ˌɪn.tərˈæk.tɪv ˈkwɪz.ɪz kiːp ˈstuː.dənts ˈæk.tɪv.li ɪnˈɡeɪdʒd θruːˈaʊt ðə ˈlɛs.ən/",
+        "vietnamese": "Các câu đố tương tác giúp học sinh tham gia hào hứng xuyên suốt tiết học.",
+        "tip": "Chú ý phát âm cụm 'actively engaged' (/ˈæk.tɪv.li ɪnˈɡeɪdʒd/)."
+      },
+      {
+        "id": "d6-p3",
+        "english": "Technology is a helpful assistant, but it can never replace a caring teacher.",
+        "collocation": "never replace",
+        "ipa": "/tɛkˈnɑː.lə.dʒi ɪz ə ˈhɛlp.fəl əˈsɪs.tənt bʌt ɪt kæn ˈnɛv.ər rɪˈpleɪs ə ˈkɛr.ɪŋ ˈtiː.tʃər/",
+        "vietnamese": "Công nghệ là một trợ lý đắc lực, nhưng không bao giờ thay thế được một người thầy tận tâm.",
+        "tip": "Nhấn giọng ở 'helpful assistant' và 'caring teacher' để tạo sự tương phản giàu cảm xúc."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "How do you use technology or AI in your daily teaching work?",
+      "aiQuestionVi": "Thầy/Cô ứng dụng công nghệ hoặc AI vào công việc giảng dạy hàng ngày như thế nào?",
+      "sentenceFrame": "Nowadays, I often use technology to [slot1] and [slot2], which allows me to [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "ứng dụng trong soạn giảng",
+          "options": [
+            { "en": "design visual slides and worksheets", "vi": "thiết kế bài trình chiếu và phiếu học tập" },
+            { "en": "generate differentiated practice questions", "vi": "tạo câu hỏi ôn tập phân hóa theo trình độ" },
+            { "en": "create fun vocabulary review games", "vi": "tạo các trò chơi ôn tập từ vựng thú vị" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "ứng dụng trong theo dõi học sinh",
+          "options": [
+            { "en": "check students' understanding instantly", "vi": "kiểm tra mức độ hiểu bài của học sinh ngay tại lớp" },
+            { "en": "organize digital learning materials neatly", "vi": "sắp xếp học liệu số một cách khoa học" },
+            { "en": "give faster feedback on writing tasks", "vi": "phản hồi bài viết của học sinh nhanh hơn" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "giá trị mang lại cho người thầy",
+          "options": [
+            { "en": "focus more on mentoring individual students", "vi": "tập trung nhiều hơn vào việc kèm cặp từng học sinh" },
+            { "en": "reduce repetitive administrative work", "vi": "giảm bớt các công việc sổ sách lặp đi lặp lại" },
+            { "en": "make my lessons much more lively", "vi": "giúp bài giảng trở nên sinh động hơn nhiều" }
+          ]
+        }
+      ],
+      "sampleAnswer": "Nowadays, I often use technology to design visual slides and worksheets and check students' understanding instantly, which allows me to focus more on mentoring individual students.",
+      "sampleAnswerVi": "Hiện nay, tôi thường dùng công nghệ để thiết kế slide trực quan, phiếu bài tập và kiểm tra mức độ hiểu bài của học sinh ngay lập tức, nhờ đó tôi có thêm thời gian đồng hành sâu sát với từng em."
+    },
+    "level3": {
+      "scenario": "Sau buổi tập huấn chuyển đổi số của trường, bạn trao đổi với thầy Kevin về việc áp dụng công cụ mới cho học sinh.",
+      "partnerRole": "Mr. Kevin (Chuyên gia đào tạo giáo viên)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "Hello! What did you think of today's workshop on using AI tools in the classroom?",
+          "aiLineVi": "Chào bạn! Bạn thấy buổi tập huấn hôm nay về ứng dụng AI trong lớp học thế nào?",
+          "keywords": ["eye-opening", "practical examples", "save preparation time"],
+          "hintVi": "Gợi ý: Buổi tập huấn rất mở mang tầm mắt với nhiều ví dụ thực tế giúp tiết kiệm thời gian soạn bài.",
+          "rescueSentence": "It was really eye-opening! The practical examples showed me how to save a lot of preparation time.",
+          "rescueSentenceVi": "Thực sự rất mở mang! Các ví dụ thực tế đã chỉ cho tôi cách tiết kiệm rất nhiều thời gian chuẩn bị bài."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "I'm glad to hear that! Which tool are you planning to try first with your students?",
+          "aiLineVi": "Rất vui khi nghe vậy! Bạn dự định sẽ thử nghiệm công cụ nào đầu tiên với học sinh của mình?",
+          "keywords": ["interactive quiz tool", "review unit vocabulary", "next Monday"],
+          "hintVi": "Gợi ý: Mình định thử công cụ tạo câu đố tương tác để ôn từ vựng cho học sinh vào thứ Hai tới.",
+          "rescueSentence": "I'm planning to try the interactive quiz tool to review unit vocabulary with my class next Monday.",
+          "rescueSentenceVi": "Tôi dự định thử công cụ tạo câu đố tương tác để ôn tập từ vựng cho lớp vào thứ Hai tuần tới."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "Your students will love it! Let me know if you need the template files.",
+          "aiLineVi": "Học sinh của bạn chắc chắn sẽ thích mê! Cứ báo mình nếu bạn cần file mẫu nhé.",
+          "keywords": ["that would be helpful", "leave my email", "thank you so much"],
+          "hintVi": "Gợi ý: Thế thì tốt quá! Mình xin để lại email nhận tài liệu, cảm ơn bạn rất nhiều.",
+          "rescueSentence": "That would be so helpful! Let me leave my email address with you. Thank you so much!",
+          "rescueSentenceVi": "Thế thì quý quá! Để tôi gửi lại địa chỉ email cho bạn. Cảm ơn bạn rất nhiều nhé!"
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Vai trò của người thầy trong thời đại AI",
+      "question": "In the age of AI and technology, what qualities of a human teacher remain irreplaceable?",
+      "questionVi": "Trong kỷ nguyên AI và công nghệ, những phẩm chất nào của người giáo viên vẫn là không thể thay thế?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: AI hỗ trợ kiến thức và công cụ rất tốt (AI is great at providing information)",
+        "Ý chính 1: Sự thấu cảm và kết nối cảm xúc với học sinh (empathy and emotional connection)",
+        "Ý chính 2: Truyền cảm hứng, định hướng nhân cách và động viên đúng lúc (inspire students and shape their character)"
+      ],
+      "modelResponse": "While AI and digital tools are fantastic at delivering information and grading exercises, they can never replace the heart of a teacher. What makes human teachers truly special is our empathy, patience, and emotional connection with students. Only a real teacher can notice when a student is having a sad day, offer a warm smile, and inspire them to believe in themselves.",
+      "modelResponseVi": "Mặc dù AI và các công cụ số rất tuyệt vời trong việc cung cấp thông tin và chấm chữa bài tập, chúng không bao giờ có thể thay thế được trái tim của người thầy. Điều làm nên giá trị đặc biệt của giáo viên chính là sự thấu cảm, lòng kiên nhẫn và sợi dây kết nối cảm xúc với học trò. Chỉ có người thầy thực sự mới nhận ra khi nào học sinh đang có chuyện buồn, trao cho em một nụ cười ấm áp và truyền cảm hứng để em tin vào chính mình."
+    }
+  },
+  {
+    "id": 7,
+    "dayLabel": "Ngày 7",
+    "title": "Weekend Getaway & Travel Small Talk",
+    "vietnameseTitle": "Trò chuyện về chuyến du lịch & Giao tiếp đời thường",
+    "category": "Du lịch",
+    "cefrLevel": "A2 → B1",
+    "durationMinutes": 15,
+    "description": "Tự tin trò chuyện xã giao (small talk) về kỳ nghỉ gia đình, ẩm thực địa phương và trải nghiệm du lịch khi giao lưu quốc tế hoặc đi du lịch nước ngoài.",
+    "level1": [
+      {
+        "id": "d7-p1",
+        "english": "My family is planning a short weekend getaway to the mountains.",
+        "collocation": "weekend getaway",
+        "ipa": "/maɪ ˈfæm.ə.li ɪz ˈplæn.ɪŋ ə ʃɔːrt ˈwiːk.ɛnd ˈɡɛt.ə.weɪ tuː ðə ˈmaʊn.tənz/",
+        "vietnamese": "Gia đình tôi đang lên kế hoạch cho một chuyến đi nghỉ ngắn ngày cuối tuần trên vùng núi.",
+        "tip": "Từ 'getaway' (/ˈɡɛt.ə.weɪ/) rất hay dùng để chỉ chuyến đi đổi gió ngắn ngày."
+      },
+      {
+        "id": "d7-p2",
+        "english": "I always enjoy trying authentic local dishes whenever I visit a new city.",
+        "collocation": "authentic local dishes",
+        "ipa": "/aɪ ˈɔːl.weɪz ɪnˈdʒɔɪ ˈtraɪ.ɪŋ ɔːˈθɛn.tɪk ˈloʊ.kəl ˈdɪʃ.ɪz wɛnˈɛv.ər aɪ ˈvɪz.ɪt ə nuː ˈsɪt.i/",
+        "vietnamese": "Tôi luôn thích thưởng thức các món ăn bản địa chuẩn vị mỗi khi ghé thăm một thành phố mới.",
+        "tip": "Chú ý âm /θ/ trong từ 'authentic' (/ɔːˈθɛn.tɪk/) và âm cuối /ɪz/ trong 'dishes'."
+      },
+      {
+        "id": "d7-p3",
+        "english": "Could you recommend a peaceful place that is suitable for families with children?",
+        "collocation": "suitable for families",
+        "ipa": "/kʊd juː ˌrɛk.əˈmɛnd ə ˈpiːs.fəl pleɪs ðæt ɪz ˈsuː.tə.bəl fɔːr ˈfæm.ə.liz wɪð ˈtʃɪl.drən/",
+        "vietnamese": "Bạn có thể gợi ý một địa điểm yên bình, phù hợp cho gia đình có trẻ nhỏ được không?",
+        "tip": "Nhấn trọng âm vào âm tiết thứ 3 của 'recommend' (/ˌrɛk.əˈmɛnd/)."
+      }
+    ],
+    "level2": {
+      "aiQuestion": "What kind of travel experience do you and your family enjoy the most during school holidays?",
+      "aiQuestionVi": "Thầy/Cô và gia đình thích kiểu trải nghiệm du lịch nào nhất vào các kỳ nghỉ?",
+      "sentenceFrame": "During school holidays, my family prefers [slot1] because we love [slot2] and [slot3].",
+      "slots": [
+        {
+          "id": "slot1",
+          "label": "loại hình điểm đến",
+          "options": [
+            { "en": "visiting peaceful coastal towns", "vi": "ghé thăm những thị trấn biển yên bình" },
+            { "en": "exploring nature reserves and cool highlands", "vi": "khám phá khu bảo tồn thiên nhiên và vùng cao mát mẻ" },
+            { "en": "taking cultural trips to historical cities", "vi": "đi du lịch văn hóa tới các thành phố lịch sử" }
+          ]
+        },
+        {
+          "id": "slot2",
+          "label": "trải nghiệm yêu thích",
+          "options": [
+            { "en": "breathing fresh air away from busy traffic", "vi": "hít thở không khí trong lành rời xa phố thị đông đúc" },
+            { "en": "tasting fresh seafood and local specialties", "vi": "thưởng thức hải sản tươi và đặc sản địa phương" },
+            { "en": "taking memorable family photos together", "vi": "chụp những bức ảnh kỷ niệm gia đình bên nhau" }
+          ]
+        },
+        {
+          "id": "slot3",
+          "label": "ý nghĩa của chuyến đi",
+          "options": [
+            { "en": "helping our kids learn more about the real world", "vi": "giúp các con học hỏi thêm về thế giới thực tế" },
+            { "en": "coming back to school with fresh energy", "vi": "trở lại trường với nguồn năng lượng tươi mới" },
+            { "en": "strengthening our family bond", "vi": "thắt chặt sự gắn kết giữa các thành viên" }
+          ]
+        }
+      ],
+      "sampleAnswer": "During school holidays, my family prefers visiting peaceful coastal towns because we love breathing fresh air away from busy traffic and helping our kids learn more about the real world.",
+      "sampleAnswerVi": "Vào các kỳ nghỉ của trường, gia đình tôi thích ghé thăm những thị trấn biển yên bình vì chúng tôi yêu thích hít thở bầu không khí trong lành rời xa khói bụi và giúp các con học hỏi thêm về thế giới xung quanh."
+    },
+    "level3": {
+      "scenario": "Bạn đang giới thiệu về một điểm đến đẹp ở Việt Nam cho một người bạn giáo viên quốc tế (Ms. Claire) muốn đi du lịch cùng gia đình vào kỳ nghỉ lễ.",
+      "partnerRole": "Ms. Claire (Giáo viên quốc tế)",
+      "turns": [
+        {
+          "turnNumber": 1,
+          "aiLine": "We have a three-day holiday coming up! Could you recommend a nice place in Vietnam for a relaxing trip?",
+          "aiLineVi": "Sắp tới chúng ta có kỳ nghỉ 3 ngày! Bạn có thể gợi ý cho mình một địa điểm đẹp ở Việt Nam để đi nghỉ dưỡng không?",
+          "keywords": ["highly recommend", "Ninh Binh or Da Lat", "breathtaking scenery"],
+          "hintVi": "Gợi ý: Mình rất khuyên bạn nên đi Ninh Bình hoặc Đà Lạt vì phong cảnh thiên nhiên tuyệt đẹp và yên bình.",
+          "rescueSentence": "I would highly recommend visiting Ninh Binh or Da Lat because they have breathtaking scenery and a peaceful atmosphere.",
+          "rescueSentenceVi": "Mình rất gợi ý bạn ghé thăm Ninh Bình hoặc Đà Lạt vì ở đó có phong cảnh tuyệt đẹp và bầu không khí yên bình."
+        },
+        {
+          "turnNumber": 2,
+          "aiLine": "Ninh Binh sounds wonderful! What activities should we do when we get there?",
+          "aiLineVi": "Ninh Bình nghe tuyệt quá! Khi đến đó thì gia đình mình nên trải nghiệm những hoạt động gì?",
+          "keywords": ["take a boat trip", "cycle through rice fields", "visit ancient temples"],
+          "hintVi": "Gợi ý: Bạn nên đi thuyền ngắm cảnh, đạp xe qua cánh đồng lúa và thăm các ngôi đền cổ.",
+          "rescueSentence": "You should definitely take a boat trip in Trang An, cycle through the green rice fields, and visit ancient temples.",
+          "rescueSentenceVi": "Bạn nhất định nên đi thuyền ở Tràng An, đạp xe qua những cánh đồng lúa xanh mát và ghé thăm các ngôi đền cổ."
+        },
+        {
+          "turnNumber": 3,
+          "aiLine": "That sounds like a dream trip! Thank you so much for your wonderful advice.",
+          "aiLineVi": "Nghe đúng là một chuyến đi mơ ước! Cảm ơn lời khuyên tuyệt vời của bạn nhé.",
+          "keywords": ["have a safe trip", "send you a list", "local restaurants"],
+          "hintVi": "Gợi ý: Chúc gia đình bạn có chuyến đi thượng lộ bình an! Để mình nhắn thêm cho bạn danh sách vài quán ăn ngon ở đó nhé.",
+          "rescueSentence": "Have a safe and memorable trip! I'll message you a list of great local restaurants later today.",
+          "rescueSentenceVi": "Chúc bạn có một chuyến đi an toàn và đáng nhớ! Lát nữa mình sẽ nhắn cho bạn danh sách vài nhà hàng địa phương ngon ở đó nhé."
+        }
+      ]
+    },
+    "level4": {
+      "promptTitle": "Kể về một chuyến đi đáng nhớ cùng gia đình hoặc đồng nghiệp",
+      "question": "Describe a memorable trip you took with your family or school colleagues. Why was it special to you?",
+      "questionVi": "Hãy kể về một chuyến đi đáng nhớ của thầy/cô cùng gia đình hoặc đồng nghiệp. Vì sao chuyến đi đó lại đặc biệt?",
+      "prepSeconds": 30,
+      "speakSeconds": 90,
+      "guidingPoints": [
+        "Mở đầu: Đi đâu, vào dịp nào và đi cùng ai (Last summer, I took a memorable trip to...)",
+        "Ý chính 1: Khung cảnh, món ăn hoặc hoạt động thú vị nhất (enjoyed the peaceful atmosphere and authentic local food)",
+        "Ý chính 2: Cảm xúc và kỷ niệm đọng lại sau chuyến đi (brought us closer together and gave me fresh energy)"
+      ],
+      "modelResponse": "Last summer, after finishing the school year, my family took a four-day trip to Da Nang and Hoi An. Walking through the lantern-lit streets in the evening and enjoying authentic local dishes together was unforgettable. For me, the trip was special not just because of the beautiful scenery, but because we could slow down, laugh together, and return to the new school year with fresh energy.",
+      "modelResponseVi": "Mùa hè năm ngoái, sau khi tổng kết năm học, gia đình tôi đã có chuyến đi 4 ngày tới Đà Nẵng và Hội An. Việc cùng nhau dạo bước trên những con phố rực rỡ đèn lồng vào buổi tối và thưởng thức các món ăn bản địa thực sự khó quên. Với tôi, chuyến đi ấy đặc biệt không chỉ vì cảnh đẹp, mà còn vì cả nhà được sống chậm lại, cười đùa bên nhau và trở lại năm học mới với nguồn năng lượng tràn đầy."
+    }
+  }
+]
