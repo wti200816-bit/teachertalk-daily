@@ -1,7 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
 import { EvaluationResult } from '@/types/lesson';
 
-interface EvaluateRequestBody {
+export interface EvaluateInput {
   lessonTitle: string;
   question: string;
   modelResponse: string;
@@ -68,11 +67,12 @@ const PRONUNCIATION_DICTIONARY: Record<
   },
 };
 
-function buildSmartFallbackEvaluation(body: EvaluateRequestBody): EvaluationResult {
+export function buildSmartFallbackEvaluation(
+  body: EvaluateInput
+): EvaluationResult {
   const transcript = (body.userTranscript || '').trim();
   const wordCount = transcript ? transcript.split(/\s+/).length : 0;
 
-  // Pick 2 helpful words from the transcript or lesson context
   const lowerText = `${transcript} ${body.modelResponse}`.toLowerCase();
   const matchedWords = Object.keys(PRONUNCIATION_DICTIONARY).filter((w) =>
     lowerText.includes(w)
@@ -90,7 +90,7 @@ function buildSmartFallbackEvaluation(body: EvaluateRequestBody): EvaluationResu
     advice: PRONUNCIATION_DICTIONARY[word].advice,
   }));
 
-  const baseScore = wordCount >= 20 ? 88 : wordCount >= 8 ? 82 : 76;
+  const baseScore = wordCount >= 20 ? 89 : wordCount >= 8 ? 83 : 78;
   const overallScore = body.level1Score
     ? Math.round((baseScore + body.level1Score) / 2)
     : baseScore;
@@ -116,27 +116,27 @@ function buildSmartFallbackEvaluation(body: EvaluateRequestBody): EvaluationResu
   };
 }
 
-export async function POST(req: NextRequest) {
-  try {
-    const body = (await req.json()) as EvaluateRequestBody;
-    const apiKey =
-      body.apiKey?.trim() ||
-      process.env.GEMINI_API_KEY ||
-      process.env.OPENAI_API_KEY ||
-      '';
-    const provider = body.provider || 'gemini';
+/**
+ * Calls Google Gemini API or OpenAI API directly from the browser (Client-side)
+ * so the app runs 100% serverless and permanently on GitHub Pages.
+ */
+export async function evaluateSpeakingClientSide(
+  input: EvaluateInput
+): Promise<{ source: string; evaluation: EvaluationResult }> {
+  const apiKey = input.apiKey?.trim() || '';
+  const provider = input.provider || 'gemini';
 
-    if (!apiKey) {
-      return NextResponse.json({
-        source: 'smart-coach',
-        evaluation: buildSmartFallbackEvaluation(body),
-      });
-    }
+  if (!apiKey) {
+    return {
+      source: 'smart-coach',
+      evaluation: buildSmartFallbackEvaluation(input),
+    };
+  }
 
-    const systemPrompt = `Bạn là một Huấn luyện viên Giao tiếp Tiếng Anh Sư phạm (AI Coach) tận tâm dành cho giáo viên Việt Nam độ tuổi 30-40 đang luyện từ A2 lên B1.
-Chủ đề bài học: "${body.lessonTitle}"
-Câu hỏi mở (Level 4): "${body.question}"
-Đoạn nói của giáo viên (Transcript): "${body.userTranscript || '(Giáo viên vừa luyện đọc mẫu)'}"
+  const systemPrompt = `Bạn là một Huấn luyện viên Giao tiếp Tiếng Anh Sư phạm (AI Coach) tận tâm dành cho giáo viên Việt Nam độ tuổi 30-40 đang luyện từ A2 lên B1.
+Chủ đề bài học: "${input.lessonTitle}"
+Câu hỏi mở (Level 4): "${input.question}"
+Đoạn nói của giáo viên (Transcript): "${input.userTranscript || '(Giáo viên vừa luyện đọc mẫu)'}"
 
 Hãy trả về kết quả đánh giá dưới dạng JSON hợp lệ (không bọc trong markdown block nếu không cần thiết) theo đúng cấu trúc sau:
 {
@@ -164,46 +164,49 @@ Hãy trả về kết quả đánh giá dưới dạng JSON hợp lệ (không b
   }
 }`;
 
+  try {
     if (provider === 'openai') {
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: 'gpt-4o-mini',
-          response_format: { type: 'json_object' },
-          messages: [
-            {
-              role: 'system',
-              content:
-                'You are a warm, supportive English speaking coach for Vietnamese teachers. Always respond in valid JSON.',
-            },
-            { role: 'user', content: systemPrompt },
-          ],
-          temperature: 0.6,
-        }),
-      });
+      const response = await fetch(
+        'https://api.openai.com/v1/chat/completions',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: 'gpt-4o-mini',
+            response_format: { type: 'json_object' },
+            messages: [
+              {
+                role: 'system',
+                content:
+                  'You are a warm, supportive English speaking coach for Vietnamese teachers. Always respond in valid JSON.',
+              },
+              { role: 'user', content: systemPrompt },
+            ],
+            temperature: 0.6,
+          }),
+        }
+      );
 
       if (!response.ok) {
-        return NextResponse.json({
+        return {
           source: 'smart-coach-fallback',
-          evaluation: buildSmartFallbackEvaluation(body),
-        });
+          evaluation: buildSmartFallbackEvaluation(input),
+        };
       }
 
       const data = await response.json();
       const rawContent = data?.choices?.[0]?.message?.content || '';
       const parsed = JSON.parse(rawContent) as EvaluationResult;
-
-      return NextResponse.json({
+      return {
         source: 'openai',
         evaluation: parsed,
-      });
+      };
     }
 
-    // Default: Gemini API
+    // Default: Direct Client-side call to Google Gemini API
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(
       apiKey
     )}`;
@@ -221,10 +224,10 @@ Hãy trả về kết quả đánh giá dưới dạng JSON hợp lệ (không b
     });
 
     if (!geminiRes.ok) {
-      return NextResponse.json({
+      return {
         source: 'smart-coach-fallback',
-        evaluation: buildSmartFallbackEvaluation(body),
-      });
+        evaluation: buildSmartFallbackEvaluation(input),
+      };
     }
 
     const geminiData = await geminiRes.json();
@@ -233,22 +236,14 @@ Hãy trả về kết quả đánh giá dưới dạng JSON hợp lệ (không b
     const cleanedJson = rawText.replace(/```json|```/g, '').trim();
     const parsed = JSON.parse(cleanedJson) as EvaluationResult;
 
-    return NextResponse.json({
+    return {
       source: 'gemini',
       evaluation: parsed,
-    });
+    };
   } catch {
-    return NextResponse.json({
+    return {
       source: 'smart-coach-fallback',
-      evaluation: buildSmartFallbackEvaluation({
-        lessonTitle: 'Daily Practice',
-        question: '',
-        modelResponse:
-          'From my experience as a teacher, creating a warm and supportive classroom helps students build confidence every single day.',
-        modelResponseVi:
-          'Từ kinh nghiệm đứng lớp của tôi, việc tạo ra một lớp học ấm áp và giàu sự khích lệ giúp học sinh xây dựng sự tự tin mỗi ngày.',
-        userTranscript: '',
-      }),
-    });
+      evaluation: buildSmartFallbackEvaluation(input),
+    };
   }
 }

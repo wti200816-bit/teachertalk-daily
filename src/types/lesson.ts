@@ -113,4 +113,5 @@ export interface UserProgress {
   completedLessonIds: number[];
   history: PracticeHistoryItem[];
   savedPhrases: SavedPhrase[];
+  studySecondsByDate: Record<string, number>;
 }

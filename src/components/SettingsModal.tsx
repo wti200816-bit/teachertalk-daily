@@ -36,6 +36,7 @@ export default function SettingsModal({
       apiKey: apiKey.trim(),
       teacherName: teacherName.trim() || 'Thầy/Cô',
       subject: subject.trim() || 'Giáo viên',
+      dailyGoalMinutes: initialSettings.dailyGoalMinutes || 15,
     };
     saveSettings(updated);
     onSave(updated);

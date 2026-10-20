@@ -2,48 +2,28 @@
 
 **TeacherTalk Daily** là nền tảng luyện nói tiếng Anh hàng ngày (**15 phút/ngày**) được thiết kế riêng cho **giáo viên Việt Nam độ tuổi 30–40** đang nâng trình độ giao tiếp từ **A2 lên B1**.
 
----
-
-## ✨ Tính năng cốt lõi (4 Cấp độ trong 1 Bài học)
-
-1. **Level 1 — Shadowing & Chunking (Dễ):**
-   - Luyện 3 câu ngắn chứa cụm từ cố định (Collocations) theo chủ đề sư phạm & đời sống, kèm nghĩa tiếng Việt, phiên âm IPA và mẹo phát âm.
-   - Nghe máy đọc mẫu ở tốc độ **0.8x (Chậm)** và **1.0x (Chuẩn)** bằng `Web Speech API` (`SpeechSynthesis`).
-   - Ghi âm giọng đọc (`SpeechRecognition`) và đối chiếu tự động: **tô màu xanh** các từ đọc đúng và **tô màu cam** các từ cần đọc lại.
-
-2. **Level 2 — Guided Q&A (Vừa):**
-   - AI đặt 1 câu hỏi ngắn thực tế.
-   - Hiển thị **Khung câu trả lời (Sentence Frame)** có 3 chỗ trống kèm bộ gợi ý từ vựng để giáo viên ghép câu cá nhân hóa và đọc to.
-
-3. **Level 3 — Situational Role-play (Khá):**
-   - Hội thoại 3 lượt nói với AI theo tình huống thực tế (trao đổi với đồng nghiệp nước ngoài, gặp phụ huynh, nhắc nhở học sinh, đi du lịch...).
-   - Ban đầu chỉ hiển thị **3–4 từ khóa (Keywords)**. Khi bấm nút **🆘 Cứu trợ**, hệ thống mới hiện nguyên câu tiếng Anh hoàn chỉnh để đọc theo.
-
-4. **Level 4 — The 2-Minute Teacher (Khó):**
-   - Đưa ra 1 câu hỏi mở sư phạm/đời sống kèm dàn ý 3 ý.
-   - Tích hợp đồng hồ đếm ngược **30 giây chuẩn bị** và **90 giây thu âm tự do**.
-
-5. **Sửa lỗi Thông minh với AI (`/api/evaluate`):**
-   - Kết nối trực tiếp với **Google Gemini API** hoặc **OpenAI API** (nhập API Key trên giao diện Cài đặt, lưu trong `localStorage`) kèm chế độ **Smart Pedagogical Coach** dự phòng.
-   - Trả về: **Lời khen khích lệ độ trôi chảy**, **Top 2 từ cần chỉnh phát âm** (kèm nút nghe chuẩn 0.8x/1.0x) và **1 câu Natural Upgrade** chuẩn văn phong giáo viên bản xứ tuổi 30–40.
+🌐 **Link Web Vĩnh Viễn (GitHub Pages):** [https://wti200816-bit.github.io/teachertalk-daily/](https://wti200816-bit.github.io/teachertalk-daily/)
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Tính năng nổi bật
 
-- **Framework:** Next.js (App Router, TypeScript) + Tailwind CSS + Lucide Icons
-- **Voice Processing:** `Web Speech API` (`SpeechRecognition` & `SpeechSynthesis`)
-- **AI Evaluation:** Next.js Route Handler (`/api/evaluate`) + Gemini / OpenAI API
-- **Storage:** `localStorage` (Lưu chuỗi ngày học Streak, Lịch sử điểm phát âm và Sổ tay cụm từ cần ôn tập)
+1. **Giao diện Mobile-First "Warm Educational Minimalist" (Dành cho độ tuổi 30–40):**
+   - Nền kem ấm dịu mắt (`#FAF8F5`), màu chủ đạo Xanh Lá Sage (`#0F766E`) & Xanh Navy (`#1E3A8A`), điểm nhấn Cam Hổ Phách (`#D97706`).
+   - Cỡ chữ lớn, rõ ràng, thanh điều hướng đáy (**Bottom Navigation Bar**) 4 tab: `Học hôm nay`, `Thống kê`, `Kho bài học`, `Cài đặt`.
+   - **Nút Micro lớn công thái học** ở nửa dưới màn hình kèm hiệu ứng sóng âm (`pulse` & `soundwave`).
 
----
+2. **Thống kê Thời gian học (Study Time Tracker & Analytics):**
+   - **Active Timer:** Tự động đếm số giây/phút thực tế luyện nói mỗi ngày và lưu theo ngày (`YYYY-MM-DD`) vào `localStorage`.
+   - **Progress Ring (Trong ngày):** Vòng tròn tiến độ hiển thị số phút đã học hôm nay so với mục tiêu (mặc định 15 phút/ngày).
+   - **Weekly Bar Chart (Trong tuần):** Biểu đồ cột trực quan từ Thứ Hai đến Chủ Nhật, tổng số phút cả tuần và chuỗi ngày học liên tiếp (**Streak 🔥**).
 
-## 🚀 Hướng dẫn chạy Local
+3. **Tải App về Điện thoại (PWA - Progressive Web App):**
+   - Tích hợp `manifest.json`, bộ icon `192x192`, `512x512`, `apple-touch-icon.png`, iOS meta tags và Service Worker (`sw.js`).
+   - Nút **"📲 Tải App"** hỗ trợ cài đặt 1 chạm trên Android/Chrome (`beforeinstallprompt`) và bảng hướng dẫn trực quan 2 bước cho iPhone/iPad (iOS Safari).
 
-```bash
-cd teachertalk-daily
-npm install
-npm run dev
-```
-
-Mở trình duyệt (khuyến nghị **Google Chrome**) tại địa chỉ `http://localhost:3000`.
+4. **Lộ trình 4 Cấp độ Luyện nói & Direct Gemini AI (Client-side):**
+   - **Level 1 (Shadowing):** Nghe mẫu `0.8x / 1.0x`, thu âm và tô màu xanh từ đọc đúng, màu cam từ cần đọc lại.
+   - **Level 2 (Guided Q&A):** Khung câu trả lời (Sentence Frame) có 3 ô trống kèm gợi ý từ vựng.
+   - **Level 3 (Situational Role-play):** Hội thoại 3 lượt với Keywords gợi ý và nút **🆘 Cứu trợ**.
+   - **Level 4 (The 2-Minute Teacher):** Đồng hồ đếm ngược 30s suy nghĩ + 90s nói tự do, tích hợp **Google Gemini API trực tiếp từ trình duyệt** (không cần Backend Server) để khen ngợi, chỉ ra Top 2 từ cần sửa phát âm và gợi ý 1 câu **Natural Upgrade**.
