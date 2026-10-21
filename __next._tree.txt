@@ -1,0 +1,5 @@
+:HL["/teachertalk-daily/_next/static/chunks/1li9r83kv-enz.css","style"]
+:HL["/teachertalk-daily/_next/static/media/e629b5bc06499d58-s.p.10u7vx61f1ie7.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/teachertalk-daily/_next/static/media/fba5a26ea33df6a3-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"wMW2JgRGgtaR30kMTiBZE","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
